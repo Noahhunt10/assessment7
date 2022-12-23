@@ -1,0 +1,17 @@
+
+                INSERT          APPEND
+
+tiny           34.6 μs          87.1 μs
+
+small          44.3 μs          91.7 μs
+
+medium         299.9 μs         125.5 μs
+
+large          8.0721 ms        463.3 μs
+
+extraLarge     958.6633 ms      2.624 ms
+
+
+
+
+    The insert function scales exponentially, while the append function scales linerly. The append function scales much better based off of how much quicker it runs through the different arrays. The unshift method is much slower because not only does it add a value to the front of an array, it also has to update the index of every item in the array every time it loops throug as well.
